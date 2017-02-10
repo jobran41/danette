@@ -1,0 +1,920 @@
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Bold Condensed";
+  src: url("../Roboto-BoldCondensed.eot?") format("eot"), url("../Roboto-BoldCondensed.woff") format("woff"), url("../Roboto-BoldCondensed.ttf") format("truetype"), url("../Roboto-BoldCondensed.svg#Roboto-BoldCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 17, ../sass/style.scss */
+body {
+  position: relative;
+  height: 100vh;
+  background-color: #feedcf;
+  background: #733722;
+  background: -moz-linear-gradient(top, #733722 41%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 101%);
+  background: -webkit-linear-gradient(top, #733722 41%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 101%);
+  background: linear-gradient(to bottom, #733722 41%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 100%, #bf6e4e 101%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#733722', endColorstr='#bf6e4e',GradientType=0 );
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* line 31, ../sass/style.scss */
+.socialtop {
+  z-index: 999991;
+  position: absolute;
+  width: 100%;
+}
+/* line 35, ../sass/style.scss */
+.socialtop .lleft {
+  float: left;
+}
+/* line 38, ../sass/style.scss */
+.socialtop .lleft a.volume {
+  background-image: url(../images/jedid.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90px;
+  display: block;
+  width: 90px;
+}
+/* line 47, ../sass/style.scss */
+.socialtop .lleft a i {
+  color: #fff;
+  font-size: 21px;
+}
+/* line 54, ../sass/style.scss */
+.socialtop .lright {
+  float: right;
+  width: 22%;
+}
+/* line 57, ../sass/style.scss */
+.socialtop .lright ul {
+  display: flex;
+  list-style: none;
+}
+/* line 60, ../sass/style.scss */
+.socialtop .lright ul li {
+  width: 88%;
+  padding: 4px;
+}
+/* line 63, ../sass/style.scss */
+.socialtop .lright ul li a {
+  display: block;
+  float: left;
+  padding: 4px;
+}
+/* line 64, ../sass/style.scss */
+.socialtop .lright ul li a.condition {
+  border: 3px solid #f9c74c;
+  font-family: "Open Sans Bold";
+  color: #f9c74c;
+  padding: 2px;
+  font-size: 10px;
+}
+/* line 74, ../sass/style.scss */
+.socialtop .lright ul li a i {
+  color: #fff;
+  font-size: 21px;
+}
+
+/* line 84, ../sass/style.scss */
+.socialbottom {
+  z-index: 999991;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+/* line 89, ../sass/style.scss */
+.socialbottom .leftlbcopyright {
+  float: left;
+  margin-top: 20px;
+  font-family: "Roboto Bold Condensed";
+  color: #fff;
+  font-weight: bold;
+}
+/* line 96, ../sass/style.scss */
+.socialbottom .rightlogodanon {
+  float: right;
+}
+
+/* line 100, ../sass/style.scss */
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 107, ../sass/style.scss */
+.section .content {
+  position: absolute;
+  top: 0;
+  left: 900px;
+  width: 100%;
+  height: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 117, ../sass/style.scss */
+.section .content > * {
+  width: 100%;
+}
+/* line 120, ../sass/style.scss */
+.section .content > div:first-child {
+  height: 25%;
+}
+/* line 122, ../sass/style.scss */
+.section .content > div:first-child img {
+  max-height: 100%;
+}
+/* line 127, ../sass/style.scss */
+.section .content > div:last-child {
+  height: 10%;
+}
+/* line 129, ../sass/style.scss */
+.section .content > div:last-child a {
+  font-family: "Roboto Bold Condensed";
+  color: #5e2c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
+/* line 137, ../sass/style.scss */
+.section .content > div:last-child a.commencer {
+  background-image: url(../images/Rectanglebtn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40px;
+  line-height: 39px;
+  width: 200px;
+  font-size: 19px;
+}
+/* line 146, ../sass/style.scss */
+.section .content > div:last-child a.instruction {
+  border: 2px solid #f6ba52;
+  margin-top: 2px;
+  width: 100px;
+  font-size: 11px;
+  background: #c99d7b;
+}
+/* line 156, ../sass/style.scss */
+.section .content > div:nth-child(2) {
+  height: 65%;
+}
+/* line 158, ../sass/style.scss */
+.section .content > div:nth-child(2) img {
+  max-height: 100%;
+}
+/* line 162, ../sass/style.scss */
+.section .content .formmarque {
+  position: relative;
+  position: relative;
+}
+/* line 164, ../sass/style.scss */
+.section .content .formmarque img {
+  max-height: 100%;
+}
+/* line 168, ../sass/style.scss */
+.section .content .formmarque .divform {
+  margin-top: -22%;
+}
+/* line 170, ../sass/style.scss */
+.section .content .formmarque .divform .parentinput {
+  /*display: flex;*/
+}
+/* line 173, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput {
+  width: 31%;
+  margin: 0 auto;
+}
+/* line 177, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput p.acceptregelemet {
+  width: 80%;
+  float: right;
+  color: #005fa6;
+  font-family: "Open Sans Bold";
+  margin-top: 7px;
+}
+/* line 185, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 188, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput input.chreglement {
+  width: 7%;
+  margin-left: 30px;
+}
+/* line 192, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput input.tailleform2 {
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 196, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput input.tailleform3 {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 200, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput input.tailleform4 {
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 204, ../sass/style.scss */
+.section .content .formmarque .divform .tailleinput input.tailleform5 {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 214, ../sass/style.scss */
+.section #myModal .modal-dialog {
+  width: 100%;
+  margin-top: 60px;
+}
+/* line 217, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 220, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction h3 {
+  font-size: 2.83771875em;
+  font-weight: bold;
+  line-height: 1em;
+  color: #e2b72d;
+  font-style: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  font-family: "Roboto Bold Condensed";
+  background-color: #0e0805;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+/* line 234, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction h3 i {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: #fff;
+  font-size: 40px;
+}
+/* line 242, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext {
+  background-color: rgba(0, 0, 0, 0.68235);
+}
+/* line 244, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext .insvideo {
+  position: relative;
+  width: 51.366025%;
+  background-color: #918983;
+  border: 3px solid white;
+  height: 146px;
+  margin: 20px auto;
+}
+/* line 246, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext .insvideo i {
+  font-size: 50px;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+/* line 257, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext .insvideo:after {
+  content: '01';
+  height: 45px;
+  width: 20.85289%;
+  padding: 2.5px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 3px solid #e2b72d;
+  position: absolute;
+  right: -90px;
+  font-size: 30px;
+  font-family: "Roboto Bold Condensed";
+  color: #e2b72d;
+  line-height: 1.1;
+  top: 0;
+}
+/* line 276, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext .insinputvideo {
+  position: relative;
+  height: 41px;
+  width: 41.366025%;
+  background-color: #918983;
+  border: 3px solid white;
+  margin: 40px auto;
+  font-family: "Open Sans Bold";
+  font-size: 13px;
+  color: #000;
+  line-height: 2.5;
+}
+/* line 287, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext .insinputvideo:after {
+  content: '02';
+  height: 45px;
+  width: 28.85289%;
+  padding: 3.5px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 3px solid #e2b72d;
+  position: absolute;
+  right: -90px;
+  font-size: 30px;
+  font-family: "Roboto Bold Condensed";
+  color: #e2b72d;
+  line-height: 1.1;
+  top: 0;
+}
+/* line 306, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext .insbtn {
+  position: relative;
+  height: 41px;
+  width: 20.807356%;
+  background-color: #918983;
+  border: 3px solid white;
+  margin: 45px auto;
+  font-family: "Open Sans Bold";
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  line-height: 2;
+}
+/* line 318, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext .insbtn:after {
+  content: '03';
+  height: 45px;
+  width: 56.85289%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 3px solid #e2b72d;
+  position: absolute;
+  right: -90px;
+  font-size: 30px;
+  font-family: "Roboto Bold Condensed";
+  color: #e2b72d;
+  line-height: 1.1;
+  top: 0;
+}
+/* line 338, ../sass/style.scss */
+.section #myModal .modal-dialog .instruction .instructiontext p.styltext {
+  color: #fff;
+  margin-top: 40px;
+  font-family: "Open Sans Bold";
+}
+
+/* line 349, ../sass/style.scss */
+#second {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 356, ../sass/style.scss */
+#third {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+}
+/* line 365, ../sass/style.scss */
+#third .content .videmarque .videolook .detaille {
+  width: 35%;
+  position: absolute;
+  top: 45%;
+  left: calc(100% - 67.5%);
+  right: 0;
+  bottom: 0;
+  height: 120px;
+}
+/* line 374, ../sass/style.scss */
+#third .content .videmarque .videolook .detaille .cadretext p {
+  background: rgba(255, 255, 255, 0.4);
+  border: 5px solid #f9c74c;
+  font-family: "Open Sans Bold";
+}
+/* line 380, ../sass/style.scss */
+#third .content .videmarque .videolook .detaille .btnjouerclick {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 385, ../sass/style.scss */
+#third .content .videmarque .videolook .detaille h5 {
+  color: #e2b72d;
+  font-family: "Roboto Bold Condensed";
+  text-align: left;
+  font-size: 28px;
+}
+/* line 393, ../sass/style.scss */
+#third .content .videmarque .videolook .divvideoform {
+  width: 37%;
+  margin: 0px auto;
+}
+/* line 396, ../sass/style.scss */
+#third .content .videmarque .videolook .divvideoform input {
+  width: 70%;
+  float: left;
+  border: 5px solid #faf3e7;
+  height: 40px;
+}
+/* line 402, ../sass/style.scss */
+#third .content .videmarque .videolook .divvideoform a {
+  display: block;
+  background: -webkit-linear-gradient(44deg, #ffae00 0%, #fff1ba 16%, #ffd200 50%, #fff7d7 79%, #ffcc00 100%), white;
+  border: 5px solid #f9c74c;
+  height: 40px;
+  width: 25%;
+  float: right;
+  line-height: 1.3;
+}
+/* line 416, ../sass/style.scss */
+#third .jouervideo {
+  padding-top: 10px;
+}
+/* line 420, ../sass/style.scss */
+#third .jouervideo .axeelipse {
+  display: flex;
+  width: 20%;
+  margin: 0 auto;
+}
+/* line 424, ../sass/style.scss */
+#third .jouervideo .axeelipse a {
+  background: rgba(244, 220, 163, 0.4);
+  border: 3px solid rgba(249, 199, 76, 0.3);
+  border-radius: 50%;
+  height: 37px;
+  width: 15.8583%;
+  font-size: 20px;
+  font-family: "Open Sans Bold";
+  color: #f9c74c;
+}
+/* line 433, ../sass/style.scss */
+#third .jouervideo .axeelipse a.active {
+  color: #5e2c1c;
+  height: 50px;
+  width: 30.8583%;
+  font-size: 28px;
+  line-height: 1.6;
+  margin-top: -5px;
+}
+/* line 441, ../sass/style.scss */
+#third .jouervideo .axeelipse a i {
+  font-size: 25px;
+  margin-top: 18px;
+}
+/* line 448, ../sass/style.scss */
+#third .jouervideo .axeelipse .firstsmallelipse {
+  background: #f9c74c;
+  border-radius: 50%;
+  height: 7px;
+  width: 2.472335%;
+  margin-top: 17px;
+}
+/* line 456, ../sass/style.scss */
+#third .jouervideo .axeelipse .lastsmallelipse {
+  background: #f9c74c;
+  border-radius: 50%;
+  height: 7px;
+  width: 2.472335%;
+  margin-top: 17px;
+}
+/* line 463, ../sass/style.scss */
+#third .jouervideo .axeelipse hr {
+  border-top: 1px solid #eee;
+  height: 2px;
+  width: 33px;
+  background: #f9c74c;
+}
+
+/* line 474, ../sass/style.scss */
+#fourth, #five, #sixe {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+}
+/* line 483, ../sass/style.scss */
+#fourth .content .videmarque .videolook .overlay, #five .content .videmarque .videolook .overlay, #sixe .content .videmarque .videolook .overlay {
+  width: 44%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
+  padding-bottom: 125px;
+}
+/* line 492, ../sass/style.scss */
+#fourth .content .videmarque .videolook .overlay p, #five .content .videmarque .videolook .overlay p, #sixe .content .videmarque .videolook .overlay p {
+  color: #fff;
+  font-family: "Open Sans Bold";
+}
+/* line 496, ../sass/style.scss */
+#fourth .content .videmarque .videolook .overlay i, #five .content .videmarque .videolook .overlay i, #sixe .content .videmarque .videolook .overlay i {
+  font-size: 40px;
+  color: #fff;
+}
+/* line 501, ../sass/style.scss */
+#fourth .content .videmarque .videolook .detaille, #five .content .videmarque .videolook .detaille, #sixe .content .videmarque .videolook .detaille {
+  width: 35%;
+  position: absolute;
+  top: 45%;
+  left: calc(100% - 67.5%);
+  right: 0;
+  bottom: 0;
+  height: 120px;
+}
+/* line 510, ../sass/style.scss */
+#fourth .content .videmarque .videolook .detaille .cadretext p, #five .content .videmarque .videolook .detaille .cadretext p, #sixe .content .videmarque .videolook .detaille .cadretext p {
+  background: rgba(255, 255, 255, 0.4);
+  border: 5px solid #f9c74c;
+  font-family: "Open Sans Bold";
+}
+/* line 516, ../sass/style.scss */
+#fourth .content .videmarque .videolook .detaille .btnjouerclick, #five .content .videmarque .videolook .detaille .btnjouerclick, #sixe .content .videmarque .videolook .detaille .btnjouerclick {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 521, ../sass/style.scss */
+#fourth .content .videmarque .videolook .detaille h5, #five .content .videmarque .videolook .detaille h5, #sixe .content .videmarque .videolook .detaille h5 {
+  color: #e2b72d;
+  font-family: "Roboto Bold Condensed";
+  text-align: left;
+  font-size: 28px;
+}
+/* line 529, ../sass/style.scss */
+#fourth .content .videmarque .videolook .divvideoform, #five .content .videmarque .videolook .divvideoform, #sixe .content .videmarque .videolook .divvideoform {
+  width: 37%;
+  margin: 0px auto;
+}
+/* line 532, ../sass/style.scss */
+#fourth .content .videmarque .videolook .divvideoform input, #five .content .videmarque .videolook .divvideoform input, #sixe .content .videmarque .videolook .divvideoform input {
+  width: 70%;
+  float: left;
+  border: 5px solid #faf3e7;
+  height: 40px;
+}
+/* line 538, ../sass/style.scss */
+#fourth .content .videmarque .videolook .divvideoform a, #five .content .videmarque .videolook .divvideoform a, #sixe .content .videmarque .videolook .divvideoform a {
+  display: block;
+  background: -webkit-linear-gradient(44deg, #ffae00 0%, #fff1ba 16%, #ffd200 50%, #fff7d7 79%, #ffcc00 100%), white;
+  border: 5px solid #f9c74c;
+  height: 33px;
+  width: 25%;
+  float: right;
+  line-height: 1.3;
+  font-size: 19px;
+  margin-top: 4px;
+}
+/* line 554, ../sass/style.scss */
+#fourth .jouervideo, #five .jouervideo, #sixe .jouervideo {
+  padding-top: 10px;
+}
+/* line 558, ../sass/style.scss */
+#fourth .jouervideo .axeelipse, #five .jouervideo .axeelipse, #sixe .jouervideo .axeelipse {
+  display: flex;
+  width: 20%;
+  margin: 0 auto;
+}
+/* line 562, ../sass/style.scss */
+#fourth .jouervideo .axeelipse a, #five .jouervideo .axeelipse a, #sixe .jouervideo .axeelipse a {
+  background: rgba(244, 220, 163, 0.4);
+  border: 3px solid rgba(249, 199, 76, 0.3);
+  border-radius: 50%;
+  height: 37px;
+  width: 15.8583%;
+  font-size: 20px;
+  font-family: "Open Sans Bold";
+  color: #f9c74c;
+}
+/* line 571, ../sass/style.scss */
+#fourth .jouervideo .axeelipse a.active, #five .jouervideo .axeelipse a.active, #sixe .jouervideo .axeelipse a.active {
+  color: #5e2c1c;
+  height: 50px;
+  width: 30.8583%;
+  font-size: 28px;
+  line-height: 1.6;
+  margin-top: -5px;
+}
+/* line 582, ../sass/style.scss */
+#fourth .jouervideo .axeelipse .firstsmallelipse, #five .jouervideo .axeelipse .firstsmallelipse, #sixe .jouervideo .axeelipse .firstsmallelipse {
+  background: #f9c74c;
+  border-radius: 50%;
+  height: 7px;
+  width: 2.472335%;
+  margin-top: 17px;
+}
+/* line 590, ../sass/style.scss */
+#fourth .jouervideo .axeelipse .lastsmallelipse, #five .jouervideo .axeelipse .lastsmallelipse, #sixe .jouervideo .axeelipse .lastsmallelipse {
+  background: #f9c74c;
+  border-radius: 50%;
+  height: 7px;
+  width: 2.472335%;
+  margin-top: 17px;
+}
+/* line 597, ../sass/style.scss */
+#fourth .jouervideo .axeelipse hr, #five .jouervideo .axeelipse hr, #sixe .jouervideo .axeelipse hr {
+  border-top: 1px solid #eee;
+  height: 2px;
+  width: 33px;
+  background: #f9c74c;
+}
+
+/* line 610, ../sass/style.scss */
+#scene li img.wave {
+  animation: wave22 4s 0.1s infinite linear;
+}
+/* line 613, ../sass/style.scss */
+#scene li img.wave2 {
+  animation: wave22 4s 0.1s infinite linear;
+}
+/* line 616, ../sass/style.scss */
+#scene li img.wave22 {
+  animation: wave22 4s 0.1s infinite linear;
+}
+
+/* line 623, ../sass/style.scss */
+#scene {
+  opacity: 1;
+}
+
+/* line 626, ../sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 629, ../sass/style.scss */
+.margintop {
+  margin-top: 100px !important;
+}
+
+/* line 632, ../sass/style.scss */
+.bgbton {
+  background: -webkit-linear-gradient(44deg, #ffae00 0%, #fff1ba 16%, #ffd200 50%, #fff7d7 79%, #ffcc00 100%), white;
+  border: 5px solid #f9c74c;
+}
+
+/* line 636, ../sass/style.scss */
+.sttext {
+  color: #592618;
+  font-family: "Roboto Bold Condensed";
+  font-size: 25px;
+}
+
+/* line 641, ../sass/style.scss */
+.background-game {
+  background: #fff;
+}
+/* line 643, ../sass/style.scss */
+.background-game .instruction {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 646, ../sass/style.scss */
+.background-game .instruction h3 {
+  font-size: 2.83771875em;
+  font-weight: bold;
+  line-height: 1em;
+  color: #e2b72d;
+  font-style: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  font-family: "Roboto Bold Condensed";
+  background-color: #0e0805;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+/* line 660, ../sass/style.scss */
+.background-game .instruction h3 i {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+/* line 666, ../sass/style.scss */
+.background-game .instruction .instructiontext {
+  background-color: rgba(0, 0, 0, 0.68235);
+}
+/* line 668, ../sass/style.scss */
+.background-game .instruction .instructiontext .insvideo {
+  width: 51.366025%;
+  background-color: #918983;
+  border: 3px solid white;
+  height: 146px;
+  margin: 20px auto;
+}
+/* line 669, ../sass/style.scss */
+.background-game .instruction .instructiontext .insvideo i {
+  font-size: 50px;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+/* line 681, ../sass/style.scss */
+.background-game .instruction .instructiontext .insinputvideo {
+  height: 41px;
+  width: 41.366025%;
+  background-color: #918983;
+  border: 3px solid white;
+  margin: 20px auto;
+  font-family: "Open Sans Bold";
+  font-size: 13px;
+  color: #000;
+  line-height: 2.5;
+}
+/* line 692, ../sass/style.scss */
+.background-game .instruction .instructiontext .insbtn {
+  height: 41px;
+  width: 20.807356%;
+  background-color: #918983;
+  border: 3px solid white;
+  margin: 20px auto;
+  font-family: "Open Sans Bold";
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  line-height: 2;
+}
+/* line 705, ../sass/style.scss */
+.background-game .instruction .instructiontext p.styltext {
+  color: #fff;
+  margin-top: 40px;
+  font-family: "Open Sans Bold";
+}
+
+/* line 714, ../sass/style.scss */
+#dialogoverlay {
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 724, ../sass/style.scss */
+#dialogbox {
+  display: none;
+  position: fixed;
+  width: 550px;
+  z-index: 10;
+}
+
+/* line 730, ../sass/style.scss */
+#dialogbox > div {
+  margin: 8px;
+}
+
+/* line 731, ../sass/style.scss */
+#dialogbox > div > #dialogboxhead {
+  font-size: 19px;
+  padding: 10px;
+}
+
+/* line 732, ../sass/style.scss */
+#dialogbox > div > #dialogboxbody {
+  padding: 20px;
+}
+
+/* line 733, ../sass/style.scss */
+#dialogbox > div > #dialogboxfoot {
+  padding: 10px;
+  text-align: right;
+}
+
+/* line 734, ../sass/style.scss */
+.clouds {
+  background: transparent url(http://autour-de-danette-le-liegeois.com/images/layer33.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+/* line 743, ../sass/style.scss */
+.clouds2 {
+  background: transparent url(http://autour-de-danette-le-liegeois.com/images/layer3.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+/* line 752, ../sass/style.scss */
+.clouds3 {
+  background: transparent url(http://autour-de-danette-le-liegeois.com/images/layer333.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+  margin-top: -140px;
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@keyframes wave22 {
+  0% {
+    -webkit-transform: rotateZ(50deg) translate3d(0, 5%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(50deg) translate3d(0, 5%, 0) rotateZ(0deg);
+    transform: rotateZ(50deg) translate3d(0, 5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(260deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(260deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+    transform: rotateZ(260deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+  }
+}
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 5%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0, 5%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(-360deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+    transform: rotateZ(-360deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+  }
+}
+@keyframes wave2 {
+  0% {
+    -webkit-transform: rotateZ(200deg) translate3d(0, 15%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(200deg) translate3d(0, 5%, 0) rotateZ(0deg);
+    transform: rotateZ(200deg) translate3d(2%, 35%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(-360deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+    transform: rotateZ(-360deg) translate3d(5%, 5%, 0) rotateZ(-360deg);
+  }
+}
